@@ -1,0 +1,66 @@
+.intro {
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-bottom: #222 solid 2px;
+}
+
+.intro-inside {
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  margin-top: -150px;
+  margin-right: -450px;
+  background-color: #333;
+  color: #eee;
+}
+
+.loading {
+  bottom: 10px;
+  right: 20px;
+  position: absolute;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.loading p {
+  color: #eee;
+}
+
+#logo1 {
+  color: #246;
+  padding-left: 2px;
+  font-size: 64px;
+}
+
+#logo2 {
+  background-color: #246;
+  color: #eee;
+  padding-right: 5px;
+  font-size: 64px;
+}
+
+.logo {
+  background-color: #eee;
+  border: 4px #fff solid;
+  position: relative;
+  width: 400px;
+  padding: 1px;
+  padding-right: 0px;
+  margin-left: 14px;
+}
+
+.logo * {
+  display: inline;
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
