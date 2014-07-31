@@ -5,3 +5,13 @@ function blink() {
 }
 
 setInterval(blink, 500);
+
+$(document).ready( function(){
+        $('.intro').animate({
+            top: '-100%'
+        },4000);
+      
+        $('.body').animate({
+            top: '-100%'
+        },4000);
+    });
